@@ -357,7 +357,7 @@ const people = [
 // eslint-disable-next-line no-console
 console.log(people); // you can remove it
 
-const perentElement = document.querySelector('.dashboard');
+const parentElement = document.querySelector('tbody');
 
 for (const person of people) {
   const row = document.createElement('tr');
@@ -375,12 +375,12 @@ for (const person of people) {
   ];
 
   for (const info of personInfo) {
-    const tableHeader = document.createElement('th');
+    const tableHeader = document.createElement('td');
 
     tableHeader.textContent = info;
 
     row.appendChild(tableHeader);
   }
 
-  perentElement.appendChild(row);
+  parentElement.appendChild(row);
 }
