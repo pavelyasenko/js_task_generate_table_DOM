@@ -364,10 +364,11 @@ for (const person of people) {
 
   const age = person.died - person.born;
   const century = Math.ceil(person.died / 100);
+  const sexFull = person.sex === 'm' ? 'Male' : 'Female';
 
   const personInfo = [
     person.name,
-    person.sex,
+    sexFull,
     person.born,
     person.died,
     age,
